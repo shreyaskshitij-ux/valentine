@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Coding Valentine</title>
+</head>
+<body style="text-align:center; font-family:Arial; background:pink;">
+
+<h2>💻❤️ Will you be my Coding Valentine?</h2>
+
+<input id="ans" placeholder="type yes">
+<br><br>
+<button onclick="check()">Submit</button>
+
+<p id="msg"></p>
+
+<script>
+function check(){
+  let a = document.getElementById("ans").value.toLowerCase();
+  if(a=="yes"){
+    document.getElementById("msg").innerHTML="🥰 Yay! You made my heart compile ❤️";
+  } else {
+    document.getElementById("msg").innerHTML="😅 Still friends!";
+  }
+}
+</script>
+
+</body>
+</html>
