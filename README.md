@@ -1,2 +1,2 @@
 # Update Valentine message with colors.
-My Coding Valentine Page
+My Valentine Page
