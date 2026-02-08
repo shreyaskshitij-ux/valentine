@@ -36,6 +36,7 @@
         font-size: 22px;
         display: none;
         line-height: 1.6;
+        text-align: center;
     }
 </style>
 </head>
@@ -52,11 +53,17 @@
 <script>
 function yesClicked() {
     const msgDiv = document.getElementById("msg");
-    // Use spans to give different colors
-    msgDiv.innerHTML = 
-        "<span style='color:#ff1a75; font-weight:bold;'>Shreyas</span> says: " +
-        "<span style='color:#1a75ff; font-weight:bold;'>Samu</span>, " +
-        "<span style='color:#d6336c;'>You are my lover, my partner, my inspiration, my best friend, my one and only, my life. You are my everything. I love you. 💖</span>";
+
+    // Colored and bolded names + message
+    msgDiv.innerHTML = `
+        <span style="color:#ff1a75; font-weight:bold;">Shreyas</span> says:<br>
+        <span style="color:#1a75ff; font-weight:bold;">Samu</span>,<br>
+        <span style="color:#d6336c;">
+            You are my lover, my partner, my inspiration, my best friend, my one and only, my life.<br>
+            You are my everything. I love you. 💖
+        </span>
+    `;
+
     msgDiv.style.display = "block";
 }
 
